@@ -45,6 +45,10 @@ app.listen(port, () => {
   console.log(`Server is running on ${port}`);
 });
 
+app.get("/", (req, res) => {
+  res.send("<h1>suck my balls</h1>");
+});
+
 app.post("/login", (req, res) => {
   res.json({ msg: "suck my balls" });
 });
