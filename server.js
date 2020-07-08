@@ -12,7 +12,7 @@ connectDB();
 // api user model
 const userModel = require("./Api/User");
 app.use(express.json({ extended: false }));
-const port = process.env.Port || 3001;
+const port = process.env.PORT || 3001;
 // const NODE_ENV = "production";
 
 // app.get("/", (req, res) => {
