@@ -12,7 +12,7 @@ connectDB();
 // api user model
 const userModel = require("./Api/User");
 app.use(express.json({ extended: false }));
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3004;
 // const NODE_ENV = "production";
 
 // app.get("/", (req, res) => {
@@ -35,7 +35,7 @@ const loginRoute = require("./routes/login.routes");
 const signupRoute = require("./routes/signup.routes");
 const userRoute = require("./routes/user.routes");
 
-app.post("/signup", userModel);
+// app.post("/signup", userModel); *err code dont use*
 
 app.post("/login", loginRoute);
 app.post("/signup", signupRoute);
